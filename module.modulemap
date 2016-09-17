@@ -1,5 +1,4 @@
 module SwiftCUDA [system] {
-  umbrella header "SwiftCUDA.h"
   explicit module CUDA {
     header "/usr/local/cuda/include/cuda.h"
     link "cuda"
