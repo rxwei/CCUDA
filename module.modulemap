@@ -4,9 +4,9 @@ module SwiftCUDA [system] {
     link "cuda"
   }
   explicit module Runtime {
-    header "/usr/local/cuda/include/cuda-runtime.h"
+    header "/usr/local/cuda/include/cuda_runtime.h"
     explicit module API {
-      header "/usr/local/cuda/include/cuda-runtime-api.h"
+      header "/usr/local/cuda/include/cuda_runtime_api.h"
     }
     link "cudart"
     export API
