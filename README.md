@@ -7,6 +7,7 @@ import SwiftCUDA.CUDA         // Equivalent to #include<cuda.h>
 import SwiftCUDA.Runtime      // Equivalent to #include<cuda_runtime.h>
 import SwiftCUDA.Runtime.API  // Equivalent to #include<cuda_runtime_api.h>
 import SwiftCUDA.cuBLAS       // Equivalent to #include<cublas.h>
+import SwiftCUDA.nvBLAS       // Equivalent to #include<nvblas.h>
 ```
 
 ## Use it in your Swift package
