@@ -1,5 +1,5 @@
 module CUDA [system] {
-  explicit module CUDA {
+  explicit module Driver {
     header "/usr/local/cuda/include/cuda.h"
     link "cuda"
   }
