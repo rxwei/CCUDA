@@ -18,5 +18,5 @@ Add a dependency:
 
 You'll need to specify the path to your CUDA headers and library at `swift build`. For example:
 ```
-swift build -Xlinker -L/usr/local/cuda/lib
+swift build -Xcc -I/usr/local/cuda/include -Xlinker -L/usr/local/cuda/lib
 ```
