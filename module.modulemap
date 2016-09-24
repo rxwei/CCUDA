@@ -1,4 +1,4 @@
-module SwiftCUDA [system] {
+module CUDA [system] {
   explicit module CUDA {
     header "/usr/local/cuda/include/cuda.h"
     link "cuda"
@@ -19,7 +19,7 @@ module SwiftCUDA [system] {
     header "/usr/local/cuda/include/nvblas.h"
     link "nvblas"
   }
-  export CUDA
+  export Driver
   export Runtime
   export cuBLAS
   export nvBLAS
