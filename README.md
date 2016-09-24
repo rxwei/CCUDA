@@ -16,7 +16,7 @@ Add a dependency:
 .Package(url: "https://github.com/rxwei/SwiftCUDA", majorVersion: 1, minor: 0)
 ```
 
-You'll need to specify the path to your LLVM headers and library at `swift build`. For example:
+You'll need to specify the path to your CUDA headers and library at `swift build`. For example:
 ```
 swift build -Xlinker -L/usr/local/cuda/lib
 ```
