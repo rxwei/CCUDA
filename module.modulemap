@@ -19,8 +19,13 @@ module CUDA [system] {
     header "/usr/local/cuda/include/nvblas.h"
     link "nvblas"
   }
+  explicit module cuDNN {
+    header "/usr/local/cuda/include/cudnn.h"
+    link "cudnn"
+  }
   export Driver
   export Runtime
   export cuBLAS
   export nvBLAS
+  export cuDNN
 }
