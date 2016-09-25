@@ -7,6 +7,8 @@ import CUDA.Driver       // Equivalent to #include <cuda.h>
 import CUDA.Runtime      // Equivalent to #include <cuda_runtime.h>
 import CUDA.Runtime.API  // Equivalent to #include <cuda_runtime_api.h>
 import CUDA.cuBLAS       // Equivalent to #include <cublas.h>
+import CUDA.cuBLAS.V2    // Equivalent to #include <cublas_v2.h>
+import CUDA.cuBLAS.API    // Equivalent to #include <cublas_api.h>
 import CUDA.nvBLAS       // Equivalent to #include <nvblas.h>
 import CUDA.cuDNN        // Equivalent to #include <cudnn.h>
 ```
