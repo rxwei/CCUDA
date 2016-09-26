@@ -1,9 +1,5 @@
 module CUDA [system] {
-
-  explicit module Driver {
-    header "/usr/local/cuda/include/cuda.h"
-    link "cuda"
-  }
+  header "/usr/local/cuda/include/cuda.h"
 
   explicit module Runtime {
     header "/usr/local/cuda/include/cuda_runtime.h"
@@ -14,33 +10,31 @@ module CUDA [system] {
     export API
   }
 
-  explicit module cuBLAS {
-    header "/usr/local/cuda/include/cublas.h"
-    explicit module V2 {
-      header "/usr/local/cuda/include/cublas_v2.h"
-    }
-    explicit module API {
-      header "/usr/local/cuda/include/cublas_api.h"
-    }
-    link "cublas"
-    export v2
-    export API
-  }
+  link "cuda"
 
-  explicit module nvBLAS {
-    header "/usr/local/cuda/include/nvblas.h"
-    link "nvblas"
-  }
-
-  explicit module cuDNN {
-    header "/usr/local/cuda/include/cudnn.h"
-    link "cudnn"
-  }
-
-  export Driver
   export Runtime
-  export cuBLAS
-  export nvBLAS
-  export cuDNN
+}
 
+
+module cuBLAS [system] {
+  header "/usr/local/cuda/include/cublas.h"
+  explicit module V2 {
+    header "/usr/local/cuda/include/cublas_v2.h"
+  }
+  explicit module API {
+    header "/usr/local/cuda/include/cublas_api.h"
+  }
+  link "cublas"
+  export v2
+  export API
+}
+
+module nvBLAS [system] {
+  header "/usr/local/cuda/include/nvblas.h"
+  link "nvblas"
+}
+
+module cuDNN [system] {
+  header "/usr/local/cuda/include/cudnn.h"
+  link "cudnn"
 }
