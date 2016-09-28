@@ -37,3 +37,8 @@ module nvBLAS [system] {
   header "/usr/local/cuda/include/nvblas.h"
   link "nvblas"
 }
+
+module cuDNN [system] {
+  header "/usr/local/cuda/include/cudnn.h"
+  link "cudnn"
+}
