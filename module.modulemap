@@ -15,6 +15,10 @@ module CUDA [system] {
   export Runtime
 }
 
+module NVRTC [system] {
+  header "/usr/local/cuda/include/nvrtc.h"
+  link "nvrtc"
+}
 
 module cuBLAS [system] {
   header "/usr/local/cuda/include/cublas.h"
@@ -32,9 +36,4 @@ module cuBLAS [system] {
 module nvBLAS [system] {
   header "/usr/local/cuda/include/nvblas.h"
   link "nvblas"
-}
-
-module cuDNN [system] {
-  header "/usr/local/cuda/include/cudnn.h"
-  link "cudnn"
 }

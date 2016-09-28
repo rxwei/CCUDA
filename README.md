@@ -6,6 +6,7 @@ Swift CUDA system module
 import CUDA              // Equivalent to #include <cuda.h>
 import CUDA.Runtime      // Equivalent to #include <cuda_runtime.h>
 import CUDA.Runtime.API  // Equivalent to #include <cuda_runtime_api.h>
+import NVRTC             // Equivalent to #include <nvrtc.h>
 import cuBLAS            // Equivalent to #include <cublas.h>
 import cuBLAS.V2         // Equivalent to #include <cublas_v2.h>
 import cuBLAS.API        // Equivalent to #include <cublas_api.h>
@@ -15,9 +16,11 @@ import cuDNN             // Equivalent to #include <cudnn.h>
 
 ## Dependencies
 
-One of more of the following modules are required, when and only when you `import` them.
+One of more of the following modules are required, **when and only when** you `import` them.
 
 **CUDA** at `/usr/local/cuda/`
+
+**NVRTC** at `/usr/local/cuda/`
 
 **cuBLAS** at `/usr/local/cuda/`
 
