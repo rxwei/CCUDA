@@ -11,7 +11,7 @@ import CCuBLAS            // Equivalent to #include <cublas.h>
 import CCuBLAS.V2         // Equivalent to #include <cublas_v2.h>
 import CCuBLAS.API        // Equivalent to #include <cublas_api.h>
 import CNVBLAS            // Equivalent to #include <nvblas.h>
-import CcuDNN             // Equivalent to #include <cudnn.h>
+import CCuDNN             // Equivalent to #include <cudnn.h>
 ```
 
 ## Dependencies
