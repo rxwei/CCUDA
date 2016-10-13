@@ -1,4 +1,4 @@
-module CUDA [system] {
+module CCUDA [system] {
   header "/usr/local/cuda/include/cuda.h"
 
   explicit module Runtime {
@@ -15,12 +15,12 @@ module CUDA [system] {
   export Runtime
 }
 
-module NVRTC [system] {
+module CNVRTC [system] {
   header "/usr/local/cuda/include/nvrtc.h"
   link "nvrtc"
 }
 
-module cuBLAS [system] {
+module CCuBLAS [system] {
   header "/usr/local/cuda/include/cublas.h"
   explicit module V2 {
     header "/usr/local/cuda/include/cublas_v2.h"
@@ -33,12 +33,12 @@ module cuBLAS [system] {
   export API
 }
 
-module nvBLAS [system] {
+module CNVBLAS [system] {
   header "/usr/local/cuda/include/nvblas.h"
   link "nvblas"
 }
 
-module cuDNN [system] {
+module CCuDNN [system] {
   header "/usr/local/cuda/include/cudnn.h"
   link "cudnn"
 }

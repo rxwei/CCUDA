@@ -3,15 +3,15 @@ Swift CUDA system module
 
 ## Components
 ```swift
-import CUDA              // Equivalent to #include <cuda.h>
-import CUDA.Runtime      // Equivalent to #include <cuda_runtime.h>
-import CUDA.Runtime.API  // Equivalent to #include <cuda_runtime_api.h>
-import NVRTC             // Equivalent to #include <nvrtc.h>
-import cuBLAS            // Equivalent to #include <cublas.h>
-import cuBLAS.V2         // Equivalent to #include <cublas_v2.h>
-import cuBLAS.API        // Equivalent to #include <cublas_api.h>
-import nvBLAS            // Equivalent to #include <nvblas.h>
-import cuDNN             // Equivalent to #include <cudnn.h>
+import CCUDA              // Equivalent to #include <cuda.h>
+import CCUDA.Runtime      // Equivalent to #include <cuda_runtime.h>
+import CCUDA.Runtime.API  // Equivalent to #include <cuda_runtime_api.h>
+import CNVRTC             // Equivalent to #include <nvrtc.h>
+import CCuBLAS            // Equivalent to #include <cublas.h>
+import CCuBLAS.V2         // Equivalent to #include <cublas_v2.h>
+import CCuBLAS.API        // Equivalent to #include <cublas_api.h>
+import CNVBLAS            // Equivalent to #include <nvblas.h>
+import CcuDNN             // Equivalent to #include <cudnn.h>
 ```
 
 ## Dependencies
@@ -24,7 +24,7 @@ One of more of the following modules are required, **when and only when** you `i
 
 **cuBLAS** at `/usr/local/cuda/`
 
-**nvBLAS** at `/usr/local/cuda/`
+**NVBLAS** at `/usr/local/cuda/`
 
 **cuDNN** at `/usr/local/cuda/`
 
@@ -36,7 +36,7 @@ you to install uncessary libraries.
 
 Add a dependency:
 ```swift
-.Package(url: "https://github.com/rxwei/SwiftCUDA", majorVersion: 1, minor: 0)
+.Package(url: "https://github.com/rxwei/CCUDA", majorVersion: 1)
 ```
 
 You'll need to specify the path to your CUDA headers and library at `swift build`. For example:
