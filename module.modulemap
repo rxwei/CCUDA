@@ -1,18 +1,12 @@
 module CCUDA [system] {
   header "/usr/local/cuda/include/cuda.h"
-
-  explicit module Runtime {
-    header "/usr/local/cuda/include/cuda_runtime.h"
-    explicit module API {
-      header "/usr/local/cuda/include/cuda_runtime_api.h"
-    }
-    link "cudart"
-    export API
-  }
-
   link "cuda"
+}
 
-  export Runtime
+module CCUDARuntime [system] {
+  header "/usr/local/cuda/include/cuda_runtime.h"
+  link "cudart"
+  export API
 }
 
 module CNVRTC [system] {
@@ -21,16 +15,8 @@ module CNVRTC [system] {
 }
 
 module CCuBLAS [system] {
-  header "/usr/local/cuda/include/cublas.h"
-  explicit module V2 {
-    header "/usr/local/cuda/include/cublas_v2.h"
-  }
-  explicit module API {
-    header "/usr/local/cuda/include/cublas_api.h"
-  }
+  header "/usr/local/cuda/include/cublas_v2.h"
   link "cublas"
-  export v2
-  export API
 }
 
 module CNVBLAS [system] {

@@ -4,12 +4,9 @@ Swift CUDA system module
 ## Components
 ```swift
 import CCUDA              // Equivalent to #include <cuda.h>
-import CCUDA.Runtime      // Equivalent to #include <cuda_runtime.h>
-import CCUDA.Runtime.API  // Equivalent to #include <cuda_runtime_api.h>
+import CCUDARuntime       // Equivalent to #include <cuda_runtime.h>
 import CNVRTC             // Equivalent to #include <nvrtc.h>
-import CCuBLAS            // Equivalent to #include <cublas.h>
-import CCuBLAS.V2         // Equivalent to #include <cublas_v2.h>
-import CCuBLAS.API        // Equivalent to #include <cublas_api.h>
+import CCuBLAS            // Equivalent to #include <cublas_v2.h>
 import CNVBLAS            // Equivalent to #include <nvblas.h>
 import CCuDNN             // Equivalent to #include <cudnn.h>
 ```
