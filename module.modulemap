@@ -1,30 +1,30 @@
 module CCUDA [system] {
-  header "CCUDA.h"
+  header "cuda.h"
   link "cuda"
 }
 
 module CCUDARuntime [system] {
-  header "CCUDARuntime.h"
+  header "cuda_runtime.h"
   link "cudart"
 }
 
 module CNVRTC [system] {
-  header "CNVRTC.h"
+  header "nvrtc.h"
   link "nvrtc"
 }
 
 module CCuBLAS [system] {
-  header "CCuBLAS.h"
+  header "cublas.h"
   link "cublas"
 }
 
 module CNVBLAS [system] {
-  header "CNVBLAS.h"
+  header "nvblas.h"
   link "nvblas"
 }
 
 module CCuDNN [system] {
-  header "CCuDNN.h"
+  header "cudnn.h"
   link "cudnn"
 }
 
