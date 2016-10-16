@@ -1,5 +1,9 @@
-# CUDA
-Swift CUDA system module
+# CCUDA
+C CUDA system module for Swift
+
+This provides a direct C bridge. For native Swift CUDA
+APIs, [cuda-swift](https://github.com/rxwei/cuda-swift) is under active
+development. **cuda-swift** uses the CCUDA bridge.
 
 ## Components
 ```swift
