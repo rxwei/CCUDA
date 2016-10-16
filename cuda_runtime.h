@@ -1,7 +1,12 @@
+#ifndef _SWIFT_CCUDA_CUDA_RUNTIME_H_
+#define _SWIFT_CCUDA_CUDA_RUNTIME_H_
+
 #if defined(__APPLE__)
-#import "/usr/local/cuda/include/cuda_runtime_api.h"
+#include "/usr/local/cuda/include/cuda_runtime.h"
 #elif defined(__linux__)
-#import "/usr/lib/cuda/include/cuda_runtime.h"
+#include "/usr/lib/cuda/include/cuda_runtime.h"
 #else
-#import <cuda_runtime.h>
+#include <cuda_runtime.h>
 #endif
+
+#endif // _SWIFT_CCUDA_CUDA_RUNTIME_H_
