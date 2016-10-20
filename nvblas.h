@@ -1,12 +1,10 @@
 #ifndef _SWIFT_CCUDA_NVBLAS_H_
 #define _SWIFT_CCUDA_NVBLAS_H_
 
-#if defined(__APPLE__)
-#import "/usr/local/cuda/include/nvblas.h"
-#elif defined(__linux__)
-#import "/usr/lib/cuda/include/nvblas.h"
+#if defined(__APPLE__) || defined(__linux__)
+#include "/usr/local/cuda/include/nvblas.h"
 #else
-#import <nvblas.h>
+#include <nvblas.h>
 #endif
 
-#endif
+#endif // _SWIFT_CCUDA_NVBLAS_H_
