@@ -17,7 +17,7 @@ import CCuDNN             // Equivalent to #include <cudnn.h>
 
 ## Dependencies
 
-One of more of the following modules are required, **when and only when** you `import` them.
+One or more of the following modules are required, **when and only when** you `import` them.
 
 **CUDA** at `/usr/local/cuda/`
 
